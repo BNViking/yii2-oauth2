@@ -1,0 +1,40 @@
+{
+    "name": "bnviking/yii2-oauth2",
+    "description": "OAuth2.0 Yii2 extension",
+    "type": "yii2-extension",
+    "keywords": [
+        "yii2",
+        "extension",
+        "oauth2",
+        "discord",
+        "vk",
+        "vkontakte",
+        "mailru",
+        "trovo",
+        "yandex"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/BNViking/yii2-oauth2/issues",
+        "wiki": "https://github.com/BNViking/yii2-oauth2/wiki",
+        "source": "https://github.com/BNViking/yii2-oauth2"
+    },
+    "authors": [
+        {
+            "name": "BNViking",
+            "email": "admin@bnv.one"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4",
+        "yiisoft/yii2": "~2.0.13",
+        "yiisoft/yii2-httpclient": "~2.0.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "bnviking\\oauth2\\": "src"
+        }
+    }
+}

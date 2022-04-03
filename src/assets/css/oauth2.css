@@ -1,0 +1,29 @@
+.oauth2-icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/default.png");
+}
+
+.oauth2-icon.yandex {
+    background-image: url("../img/yandex.png");
+}
+.oauth2-icon.mailru {
+    background-image: url("../img/mailru.png");
+}
+.oauth2-icon.vkontakte {
+    background-image: url("../img/vkontakte.png");
+}
+.oauth2-icon.discord {
+    background-image: url("../img/discord.png");
+}
+.oauth2-icon.trovo {
+    background-image: url("../img/trovo.png");
+}
+.oauth2-icon.default {
+    background-image: url("../img/default.png");
+}
