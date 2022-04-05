@@ -2,12 +2,22 @@
     <a href="https://bnv.one" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/12669446?s=400&u=d883b62c0adcae00380135155c820b5d928224dc&v=4" height="100px">
     </a>
-    <h2 align="center">Yii2 OAuth2.0</h1>
-    <h4 align="center">[vk.com, mail.ru, trovo.live, yandex.ru, discord.com]</h3>
+    <h2 align="center">OAuth2.0</h1>
+    <h4 align="center">Extension for Yii2 framework</h3>
     <p align="center">
         <img src="./widget.png" alt="Widget OAuth2.0" height="48">
     </p>
 </p>
+<hr>
+
+The following clients are currently supported for authorization:
+
+ * vk.com [[register your application](https://vk.com/apps?act=manage)]
+ * mail.ru [[register your application](https://o2.mail.ru/app/)]
+ * yandex.ru [[register your application](https://oauth.yandex.ru/)]
+ * discord.com [[register your application](https://discord.com/developers/applications)]
+ * trovo.live [[register your application](https://developer.trovo.live/)]
+ * twitch.tv [[register your application](https://dev.twitch.tv/console)]
 
 Installation
 ------------
@@ -17,7 +27,7 @@ The preferred way to install this extension is through [composer] (http://getcom
 Either run
 
 ```
-php composer.phar require --prefer-dist bnviking/yii2-oauth2 "~v1.0.0"
+php composer.phar require --prefer-dist bnviking/yii2-oauth2 "~v1.1.0"
 ```
 
 or add
@@ -64,6 +74,11 @@ Config
                 'clientID' => 'trovo_client_id',
                 'clientSecret' => 'trovo_client_secret',
             ],
+            'twitch'=>[
+                'class'=> \bnviking\oauth2\clients\Twitch::class,
+                'clientID' => 'twitch_client_id',
+                'clientSecret' => 'twitch_client_secret',
+            ],
         ]
     ]
     ...
@@ -76,7 +91,7 @@ Create link to OAuth2
 > * clientUrlName - name param Client ID for create URL
 > * authUrl - `<controller>`/`<action>`
 >
->Redirect URL for your APP: https://my.site/controller/action
+Redirect URL for your APP: _https://my.site/controller/action_
 
 Use in action
 -------------

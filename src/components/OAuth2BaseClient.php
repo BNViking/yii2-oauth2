@@ -151,7 +151,7 @@ abstract class OAuth2BaseClient extends Component
     /**
      * @throws OAuth2Exception
      */
-    private function getResponseData(array $config, array $data): array
+    public function getResponseData(array $config, array $data): array
     {
         try {
             $request = $this->createRequestApi($config, $data);
@@ -197,6 +197,11 @@ abstract class OAuth2BaseClient extends Component
         if (!isset($this->token['access_token'])) {
             $message = $this->token['error_description']??$this->token['message']??'not message';
             throw new OAuth2Exception("Get token data error {$this->token['error']} {$message}");
+        }
+
+        if (isset($this->token['token_type'])) {
+            /* Char 0 to upper */
+            $this->token['token_type'][0] = mb_strtoupper($this->token['token_type'][0], "utf-8");
         }
 
         $this->afterSetToken($this->token);

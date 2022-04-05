@@ -24,6 +24,9 @@
 .oauth2-icon.trovo {
     background-image: url("../img/trovo.png");
 }
+.oauth2-icon.twitch {
+    background-image: url("../img/twitch.png");
+}
 .oauth2-icon.default {
     background-image: url("../img/default.png");
 }
