@@ -33,7 +33,7 @@ php composer.phar require --prefer-dist bnviking/yii2-oauth2 "~v1.1.0"
 or add
 
 ```
-"bnviking/yii2-oauth2": "~v1.0.0"
+"bnviking/yii2-oauth2": "~v1.1.0"
 ```
 
 to the require section of your `composer.json` file.

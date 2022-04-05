@@ -11,7 +11,8 @@
         "vkontakte",
         "mailru",
         "trovo",
-        "yandex"
+        "yandex",
+        "twitch"
     ],
     "license": "MIT",
     "support": {
