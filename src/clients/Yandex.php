@@ -35,7 +35,7 @@ final class Yandex extends OAuth2BaseClient
 
     public array $mapToUserResult = [
         'id' => 'id',
-        'mail' => 'default_email',
+        'email' => 'default_email',
         'username' => 'login',
         'token' => 'access_token',
         'tokenReset' => 'refresh_token',

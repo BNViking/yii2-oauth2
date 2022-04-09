@@ -34,7 +34,7 @@ final class Discord extends OAuth2BaseClient
 
     public array $mapToUserResult = [
         'id' => 'id',
-        'mail' => 'email',
+        'email' => 'email',
         'username' => 'username',
         'token' => 'access_token',
         'tokenReset' => 'refresh_token',

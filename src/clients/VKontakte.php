@@ -36,7 +36,7 @@ final class VKontakte extends OAuth2BaseClient
 
     public array $mapToUserResult = [
         'id' => 'id',
-        'mail' => 'email',
+        'email' => 'email',
         'username' => 'screen_name',
         'token' => 'access_token',
         'tokenReset' => 'refresh_token',

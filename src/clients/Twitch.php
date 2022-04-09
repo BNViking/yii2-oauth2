@@ -34,7 +34,7 @@ final class Twitch extends OAuth2BaseClient
 
     public array $mapToUserResult = [
         'id' => 'id',
-        'mail' => 'email',
+        'email' => 'email',
         'username' => 'login',
         'token' => 'access_token',
         'tokenReset' => 'refresh_token',

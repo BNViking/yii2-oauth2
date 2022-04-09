@@ -35,7 +35,7 @@ final class MailRu extends OAuth2BaseClient
 
     public array $mapToUserResult = [
         'id' => 'id',
-        'mail' => 'email',
+        'email' => 'email',
         'username' => 'first_name',
         'token' => 'access_token',
         'tokenReset' => 'refresh_token',

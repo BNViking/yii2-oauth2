@@ -39,7 +39,7 @@ final class Trovo extends OAuth2BaseClient
 
     public array $mapToUserResult = [
         'id' => 'userId',
-        'mail' => 'email',
+        'email' => 'email',
         'username' => 'userName',
         'token' => 'access_token',
         'tokenReset' => 'refresh_token',

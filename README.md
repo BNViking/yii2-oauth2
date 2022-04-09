@@ -27,13 +27,13 @@ The preferred way to install this extension is through [composer] (http://getcom
 Either run
 
 ```
-php composer.phar require --prefer-dist bnviking/yii2-oauth2 "~v1.1.0"
+php composer.phar require --prefer-dist bnviking/yii2-oauth2 "~v1.1.1"
 ```
 
 or add
 
 ```
-"bnviking/yii2-oauth2": "~v1.1.0"
+"bnviking/yii2-oauth2": "~v1.1.1"
 ```
 
 to the require section of your `composer.json` file.
@@ -127,7 +127,7 @@ class Auth2Controller extends Controller
             /*
              * property $userData:
              *   id - User ID
-             *   mail - User email
+             *   email - User email
              *   username - User name
              *   token - Auth token
              *   tokenReset - Reset token

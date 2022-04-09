@@ -7,7 +7,7 @@ use yii\base\Component;
 final class UserResult extends Component
 {
     public string $id = '';
-    public string $mail = '';
+    public string $email = '';
     public string $username = '';
 
     public string $token = '';
